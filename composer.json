@@ -1,0 +1,44 @@
+{
+    "name": "martinmulder/vmware-laravel",
+    "description": "A Laravel Service Provider for the VMWare API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Mulder",
+            "email": "martin@serioussecurity.nl",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/martinmulder/vmware-laravel",
+    "keywords": ["Laravel", "VMWare", "Vcenter"],
+    "require": {
+        "illuminate/support": "~5|~6|~7",
+        "martinmulder/vmware-api": "0.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MartinMulder\\VMWare\\Laravel\\": "src/"
+      
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MartinMulder\\VMWare\\Laravel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MartinMulder\\VMWare\\Laravel\\VMWareServiceProvider"
+            ],
+            "aliases": {
+                "VMWare": "MartinMulder\\VMWare\\Laravel\\Facades\\VMWare"
+            }
+        }
+    }
+}

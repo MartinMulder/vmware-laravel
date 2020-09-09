@@ -24,7 +24,7 @@
     "autoload": {
         "psr-4": {
             "MartinMulder\\VMWare\\Laravel\\": "src/"
-      
+	}
     },
     "autoload-dev": {
         "psr-4": {

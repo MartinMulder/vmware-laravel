@@ -1,20 +1,15 @@
 <?php
 
-namespace MartinMulder\VMWare\laravel;
+namespace MartinMulder\VMWare\Laravel;
 
-use MartinMulder\VMWare\laravel\Exceptions\ConfigNotFound;
-use MartinMulder\VMWare\laravel\Traits\Changes;
-use MartinMulder\VMWare\laravel\Traits\Counts;
-use MartinMulder\VMWare\laravel\Traits\Incidents;
-use MartinMulder\VMWare\laravel\Traits\OperatorStats;
-use MartinMulder\VMWare\laravel\Traits\Persons;
+use MartinMulder\VMWare\Laravel\Exceptions\ConfigNotFound;
 use GuzzleHttp\Exception\ServerException;
 use Illuminate\Support\Facades\Log;
-use MartinMulder\VMWare\Api;
+use MartinMulder\VMWare\VcenterApi;
 
-class VMWare extends Api
+class VMWare extends VcenterApi
 {
-    use Incidents, OperatorStats, Changes, Counts, Persons;
+    //use Incidents, OperatorStats, Changes, Counts, Persons;
 
     /**
      * VMWare constructor.

@@ -73,7 +73,7 @@ class VMWare extends VcenterApi
     public function request($method, $uri = '', array $json = [], array $query = [], array $options = [], $decode = true)
     {
         try {
-            $response = $this->client->request($method, $uri, array_merge([
+            $response = $this->client->request($method, $this->module . '/' . $uri, array_merge([
                 'json' => $json,
                 'query' => $query,
             ], $options));

@@ -13,7 +13,7 @@
     "keywords": ["Laravel", "VMWare", "Vcenter"],
     "require": {
         "illuminate/support": "~5|~6|~7",
-        "martinmulder/vmware-api": "dev-master"
+        "martinmulder/vmware-api": "0.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0",
